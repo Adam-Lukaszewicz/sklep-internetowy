@@ -1,0 +1,170 @@
+body *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+body{
+    display:  flex;
+    flex-wrap: wrap;
+}
+header{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.logo{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+.logo>figure{
+    flex-basis: 15%;
+}
+header>a{
+    flex-basis: 50%;
+    text-align: center;
+}
+header>section{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    flex-basis: 70%;
+    height: 70%;
+}
+.searchbar>a{
+    flex-basis: 10%;
+}
+img{
+    width: 100%;
+}
+nav{
+    flex-basis: 100%;
+}
+header>nav{
+     margin-top: 4%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+li{
+    flex-basis: 33%;
+}
+nav a{
+    padding: 4%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+header>nav a{
+    font-size: 24px;
+}
+header>nav a:hover{
+    color: black;
+    border: 1px solid  black;
+    text-decoration: none;
+    box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.75);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+main{
+    flex-basis: 100%;
+    background-color: #8F8F8F;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.karuzela{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+}
+.karuzela>div{
+   flex-basis: 60%;
+}
+.karuzela>div p{
+    font-size: 25px;
+}
+.PojedynczeProdukty{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex-basis: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4%;
+    justify-content: space-between;
+}
+.OdnosnikZdjecie{
+    flex-basis: 100%;
+    margin-bottom: 1em;
+}
+article>p{
+    flex-basis: 60%;
+    font-size: 30px;
+    text-align: center;
+}
+.OdnosnikPrzycisk{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.OdnosnikPrzycisk>button{
+    flex-basis: 60%;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+footer{
+    border-top: 3px solid black;
+    flex-basis: 100%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    margin-bottom: 3%;
+}
+h3{
+    flex-basis: 100%;
+}
+footer>nav{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    flex-basis: 33%;
+}
+footer li{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 1px;
+}
+footer a:hover{
+    margin: 0px;
+    color: black;
+    border: 1px solid  black;
+    text-decoration: none;
+    box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.75);
+}
+.containerSocial{
+    align-items: center;
+}

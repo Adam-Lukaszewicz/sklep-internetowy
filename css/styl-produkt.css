@@ -1,0 +1,212 @@
+body *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+body{
+    display:  flex;
+    flex-wrap: wrap;
+}
+header{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.logo{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+.logo>figure{
+    flex-basis: 15%;
+}
+header>a{
+    flex-basis: 50%;
+    text-align: center;
+}
+header>section{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    flex-basis: 70%;
+    height: 70%;
+}
+.searchbar>a{
+    flex-basis: 10%;
+}
+img{
+    width: 100%;
+}
+nav{
+    flex-basis: 100%;
+}
+header>nav{
+     margin-top: 4%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+li{
+    flex-basis: 33%;
+}
+nav a{
+    padding: 4%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+header>nav a{
+    font-size: 24px;
+}
+header>nav a:hover{
+    color: black;
+    border: 1px solid  black;
+    text-decoration: none;
+    box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.75);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+main{
+    border-top: 3px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-basis: 100%;
+/*    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;*/
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nazwa nazwa"
+        "zdj buy"
+        "opis opis";
+}
+.nazwa{
+    grid-area: nazwa;
+    text-align: center;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 35px;
+}
+.zdjecie{
+    /*flex-basis: 40%;*/
+    grid-area: zdj;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main figure{
+    flex-basis: 100%;
+}
+aside{
+    grid-area: buy;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "yes";
+}
+.kup{
+    height: 60%;
+    grid-area: yes;
+    border: 1px solid black;
+    border-radius: 5%;
+    place-self: center;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.kup>*{
+    flex-basis: 100%;
+    padding: 5%;
+    border-bottom: 1px solid black;
+    border-radius: 5%;
+}
+.opcje{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.opcje p{
+    flex-basis: 30%;
+    font-size: 30px;
+}
+.opcje select{
+    flex-basis: 60%;
+}
+.opcje button{
+    margin-top: 1%;
+    flex-basis: 100%;
+}
+.promocje{
+    border: 0;
+}
+article{
+    margin-top: 3%;
+    color: #4f4e4e;
+    grid-area: opis;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    /*flex-basis: 100%;*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+footer{
+    border-top: 3px solid black;
+    flex-basis: 100%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    margin-bottom: 3%;
+}
+h3{
+    flex-basis: 100%;
+}
+footer>nav{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    flex-basis: 33%;
+}
+footer li{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 1px;
+}
+footer a:hover{
+    margin: 0px;
+    color: black;
+    border: 1px solid  black;
+    text-decoration: none;
+    box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.75);
+}
+.containerSocial{
+    align-items: center;
+}

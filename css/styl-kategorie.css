@@ -1,0 +1,197 @@
+body *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+body{
+    display:  flex;
+    flex-wrap: wrap;
+}
+header{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.logo{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+.logo>figure{
+    flex-basis: 15%;
+}
+header>a{
+    flex-basis: 50%;
+    text-align: center;
+}
+header>section{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    flex-basis: 70%;
+    height: 70%;
+}
+.searchbar>a{
+    flex-basis: 10%;
+}
+img{
+    width: 100%;
+}
+nav{
+    flex-basis: 100%;
+}
+header>nav{
+     margin-top: 4%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+li{
+    flex-basis: 33%;
+}
+nav a{
+    padding: 4%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+header>nav a{
+    font-size: 24px;
+}
+header>nav a:hover{
+    color: black;
+    border: 1px solid  black;
+    text-decoration: none;
+    box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.75);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+main{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-basis: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+}
+aside>.Filtry{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex-basis: 15%;
+    border: 2px solid black;
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+}
+main select, input{
+    width: 80%;
+    font-size: 20px;
+}
+
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.yellow{
+    color: yellow;
+}
+.green{
+    color: green;
+}
+.brown{
+    color: brown;
+}
+aside>figure{
+    margin-top: 60%;
+}
+.Kategorie{
+    flex-basis: 55%;
+}
+.SzybkieKategorie{
+    display: flex;
+}
+.SzybkieKategorie ul{
+    flex-basis: 100%;
+    display: flex;
+}
+.SzybkieKategorie li{
+    flex-basis: 20%;
+    border: 1px solid black;
+        padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Produkt{
+    margin-top: 5%;
+    flex-basis: 35%;
+    margin-bottom: 5%;
+    box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.75);
+}
+.Produkt h1{
+    font-size: 36px;
+    text-align: center;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+footer{
+    border-top: 3px solid black;
+    flex-basis: 100%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    margin-bottom: 3%;
+}
+h3{
+    flex-basis: 100%;
+}
+footer>nav{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    flex-basis: 33%;
+}
+footer li{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 1px;
+}
+footer a:hover{
+    margin: 0px;
+    color: black;
+    border: 1px solid  black;
+    text-decoration: none;
+    box-shadow: 2px 6px 6px 0px rgba(0,0,0,0.75);
+}
+.containerSocial{
+    align-items: center;
+}
