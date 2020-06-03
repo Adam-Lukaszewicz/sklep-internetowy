@@ -116,7 +116,7 @@ article{
     margin-bottom: 1em;
 }
 article>p{
-    flex-basis: 60%;
+    flex-basis: 50%;
     font-size: 30px;
     text-align: center;
 }
@@ -126,9 +126,7 @@ article>p{
     justify-content: center;
     align-content: center;
 }
-.OdnosnikPrzycisk>button{
-    flex-basis: 60%;
-}
+
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 footer{
     border-top: 3px solid black;
@@ -146,9 +144,13 @@ footer>nav{
     margin-top: 3%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer label{
+    flex-basis: 33%;
 }
 footer ul{
-    flex-basis: 33%;
+    flex-basis: 100%;
 }
 footer li{
     flex-basis: 100%;
@@ -167,4 +169,55 @@ footer a:hover{
 }
 .containerSocial{
     align-items: center;
+}
+footer input{
+    display: none;
+}
+label>p{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .logo{
+        display: none;
+    }
+    header input{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    nav li{
+        flex-basis: 100%;
+        padding: 4%;
+    }
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    .karuzela>div{
+        flex-basis: 100%;
+     }
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    footer label{
+        flex-basis: 100%;
+    }
+    label>ul{
+        display: none;
+    }
+    label>p{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2%;
+    }
+    #scrollDown1:checked + label>ul{
+        display: block;
+    }
+    footer ul>li{
+        padding: 0;
+    }
+    #scrollDown2:checked + label>ul{
+        display: block;
+    }
+    #scrollDown3:checked + label>ul{
+        display: block;
+    }
 }
